@@ -16,10 +16,39 @@
   --paragraphFontSize: 16px;
 }
 
+main {
+  background-color: var(--stone100);
+  width: 100%;
+  height: 1800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 700px;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.image {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
 h1 {
   text-align: left;
   color: var(--stone900);
   font-size: 2em;
+  margin-bottom: 20px;
 }
 
 h1,
@@ -35,24 +64,27 @@ span {
 }
 
 .text-content {
-  padding: 0 40px 24px 40px;
   display: flex;
+  padding: 0 5px;
   flex-direction: column;
 }
 
 .description {
   color: var(--stone600);
   line-height: 150%;
+  margin-bottom: 20px;
 }
 
 .page-headers {
   color: var(--brown900);
+  margin-bottom: 20px;
 }
 
 .prep-time {
   background-color: var(--rose50);
   border-radius: 10px;
   padding: 20px 35px;
+  margin-bottom: 20px;
 }
 
 .prep-time-header {
@@ -94,6 +126,7 @@ span {
 
 .instructions-list {
   line-height: 150%;
+  margin-bottom: 20px;
 }
 
 .number {
@@ -106,42 +139,24 @@ td {
   padding: 10px 20px;
 }
 
+.instructions {
+  margin-top: 20px;
+}
+
+.nutrition {
+  margin-top: 20px;
+}
+
+.nutrition-text {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 480px) {
+  .card {
+    width: 100vw;
+  }
+
   .image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.5em;
-  }
-
-  h1 {
-    margin-bottom: 0.5em;
-  }
-
-  .description {
-    margin-bottom: 1.2em;
-  }
-
-  .prep-time {
-    margin-bottom: 1.2em;
-  }
-
-  .page-headers {
-    margin-bottom: 0.5em;
-  }
-
-  .instructions {
-    margin: 0.9em 0;
-  }
-
-  .instructions-list li {
-    margin-bottom: 0.9em;
-  }
-
-  .nutrition {
-    margin: 1em 0;
-  }
-
-  .nutrition-text {
-    margin-bottom: 1.1em;
+    margin-top: 12em;
   }
 }
