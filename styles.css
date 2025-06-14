@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone100: hsl(30, 54%, 90%);
+  --stone150: hsl(30, 18%, 87%);
+  --stone600: hsl(30, 10%, 34%);
+  --stone900: hsl(24, 5%, 18%);
+  --brown900: hsl(14, 45%, 36%);
+  --rose800: hsl(332, 51%, 32%);
+  --rose50: hsl(330, 100%, 98%);
+  --paragraphFontSize: 16px;
+}
+
+h1 {
+  text-align: left;
+  color: var(--stone900);
+  font-size: 2em;
+}
+
+h1,
+.page-headers {
+  font-family: "Young Serif", sans-serif, serif;
+}
+
+p,
+li,
+span {
+  font-family: "Outfit", sans-serif, serif;
+  color: var(--stone600);
+}
+
+.text-content {
+  padding: 0 40px 24px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  color: var(--stone600);
+  line-height: 150%;
+}
+
+.page-headers {
+  color: var(--brown900);
+}
+
+.prep-time {
+  background-color: var(--rose50);
+  border-radius: 10px;
+  padding: 20px 35px;
+}
+
+.prep-time-header {
+  font-family: "Outfit", sans-serif, serif;
+  font-weight: bold;
+  color: var(--rose800);
+  margin-bottom: 10px;
+}
+
+.prep-time ul {
+  line-height: 190%;
+}
+
+.prep-time ul li::marker {
+  color: var(--rose800);
+}
+
+.ingredients-list {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.ingredients-list li {
+  margin-bottom: 10px;
+}
+
+.ingredients-list li::marker {
+  color: var(--brown900);
+}
+
+.linebreak {
+  color: var(--stone100);
+}
+
+.instructions-list li::marker {
+  color: var(--brown900);
+  font-weight: bold;
+}
+
+.instructions-list {
+  line-height: 150%;
+}
+
+.number {
+  color: var(--brown900);
+  font-weight: bold;
+}
+
+td {
+  border-bottom: 1px solid var(--stone150);
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5em;
+  }
+
+  h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .description {
+    margin-bottom: 1.2em;
+  }
+
+  .prep-time {
+    margin-bottom: 1.2em;
+  }
+
+  .page-headers {
+    margin-bottom: 0.5em;
+  }
+
+  .instructions {
+    margin: 0.9em 0;
+  }
+
+  .instructions-list li {
+    margin-bottom: 0.9em;
+  }
+
+  .nutrition {
+    margin: 1em 0;
+  }
+
+  .nutrition-text {
+    margin-bottom: 1.1em;
+  }
+}
