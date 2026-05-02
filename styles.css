@@ -21,6 +21,8 @@
 
 body {
     font-family: "Outfit", Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 /* Typography */
@@ -65,6 +67,11 @@ span {
 
 /* Main */
 
+.menu-container {
+    max-width: 55rem;
+    overflow: hidden;
+}
+
 img {
     height: auto;
     margin-block-end: 2rem;
@@ -72,7 +79,7 @@ img {
 }
 
 .menu-text {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
 .prep-time-container {
@@ -134,7 +141,6 @@ hr {
 }
 
 table {
-    margin-block-end: 2rem;
     width: 100%;
 }
 
@@ -153,4 +159,18 @@ td {
 .table-value-last {
     color: var(--Brown-800);
     font-weight: 700;
+}
+
+/*|| Media Query */
+
+@media screen and (min-width: 51.25rem) {
+    body {
+        padding: 2rem;
+        background-color: var(--Stone-100);
+    }
+
+    .menu-container {
+        background-color: var(--White);
+        border-radius: 1.5rem;
+    }
 }
